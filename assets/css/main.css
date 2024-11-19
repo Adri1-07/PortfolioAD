@@ -1273,3 +1273,23 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+.custom-button {
+  background-color: #149ddd;
+  color: white;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-button:hover {
+  background-color: #127cad; 
+}
+
+.custom-button:active {
+  transform: scale(0.95);
+}
