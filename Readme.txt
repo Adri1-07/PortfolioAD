@@ -7,6 +7,7 @@ License: https://bootstrapmade.com/license/
 
 git add .
 git commit -m "commentaire"
-git push origin main
+git push origin master
+
 
 git checkout -b main
