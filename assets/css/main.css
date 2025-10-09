@@ -1295,7 +1295,8 @@ section,
 }
 
 /* Style personnalisé pour les images des cartes de projets */
-.projets .card-img-top {
+.projets .card-img-top,
+.portfolio .card-img-top {
   width: 100%;
   height: 200px; /* Hauteur fixe pour toutes les images */
   object-fit: cover; /* Pour conserver les proportions et couvrir la zone */
@@ -1303,20 +1304,49 @@ section,
 }
 
 /* Assurer que toutes les cartes ont la même hauteur */
-.projets .card {
+.projets .card,
+.portfolio .card {
   height: 100%;
   display: flex;
   flex-direction: column;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
-.projets .card-body {
+.projets .card-body,
+.portfolio .card-body {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 1.5rem;
+  transition: all 0.3s ease-in-out;
 }
 
-/* Styles pour le menu latéral personnalisé */
+.projets .card:hover,
+.portfolio .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.projets .card:hover .card-body,
+.portfolio .card:hover .card-body {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.projets .card:hover .card-body h3,
+.projets .card:hover .card-body p,
+.projets .card:hover .card-body li,
+.portfolio .card:hover .card-body h3,
+.portfolio .card:hover .card-body p,
+.portfolio .card:hover .card-body li {
+  color: var(--contrast-color);
+}
+
+/* Style pour le menu latéral personnalisé */
 .header {
   width: 300px;
   padding: 20px;
