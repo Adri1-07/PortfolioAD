@@ -1,9 +1,8 @@
 const produits = [
-    { titre: "IA Grok", url: "https://x.ai/", imag: "https://www.ecranmobile.fr/photo/art/default/84187367-60150707.jpg?v=1731426672" , description: "Site officiel de Grok" },
-    { titre: "IA GROK", url: "https://metricool.com/fr/ia-grok/", imag: "https://pic.clubic.com/579348482250053/1200x799/smart/x-sur-smartphone.webp" , description: "Comment stopper l’utilisation de vos données sur X ?" },
-    { titre: "Grok 2", url: "https://www.sitew.com/intelligence-artificielle/grok2", imag: "https://siecledigital.fr/wp-content/uploads/2023/10/x-logo.jpg" , description: "Vous saurez tout sur le nouveau modèle d’xAI" },
-    { titre: "Youtube", url: "https://www.youtube.com/watch?v=yGL916TIFZw", imag: "https://static.latribune.fr/full_width/2426970/elon-musk-et-mickey-mouse-trinquent.jpg" , description: "La nouvelle IA d’ Elon Musk qui brise les codes !." },
-    { titre: "Le Twitter de Grok", url: "https://x.com/grok?lang=fr", imag: "https://pbs.twimg.com/profile_banners/1720665183188922368/1710702527/600x200" , description: "Le Twitter de Grok" }
+    { titre: "29 septembre 2025", url: "https://www.lemondeinformatique.fr/actualites/lire-avec-granite-40-ibm-livre-des-llm-moins-gourmands-en-ressources-98086.html", imag: "https://images.itnewsinfo.com/lmi/articles/grande/000000104071.png" , description: "Avec Granite 4.0, IBM livre des LLM moins gourmands en ressources"},
+    { titre: "19 septempbre 2025", url: "https://www.lemondeinformatique.fr/actualites/lire-plus-de-codage-assiste-par-l-ia-dans-visual-studio-2026-97913.html", imag: "https://images.itnewsinfo.com/lmi/articles/moyen/000000103833.png" , description: "Plus de codage assisté par l'IA dans Visual Studio 2026" },
+    { titre: "27 aout 2025", url: "https://www.lemondeinformatique.fr/actualites/lire-les-methodes-pour-duper-les-llm-se-multiplient-97692.html", imag: "https://images.itnewsinfo.com/lmi/articles/moyen/000000103502.png" , description: "Les méthodes pour duper les LLM se multiplient" },
+    { titre: "08 aout 2025", url: "https://www.lemondeinformatique.fr/actualites/lire-avec-le-projet-ire-microsoft-cree-un-agent-ia-d-analyse-des-malwares-97613.html", imag: "https://images.itnewsinfo.com/lmi/articles/moyen/000000103386.png" , description: "Avec le projet Ire, Microsoft crée un agent IA d'analyse des malwares" },
   ];
 
   console.log(produits)
