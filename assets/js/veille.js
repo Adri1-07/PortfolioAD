@@ -15,14 +15,13 @@ produits.forEach(produit => {
   // Crée une div de type "card" pour chaque produit
   const cardHTML = `
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
+              <a href="${produit.url}" class="portfolio-content h-100 d-block text-decoration-none">
                 <img src="${produit.imag}" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>${produit.titre}</h4>
                   <p>${produit.description}</p>
-                  <a href="${produit.url}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
-              </div>
+              </a>
             </div>
   `;
   
