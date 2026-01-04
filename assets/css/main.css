@@ -1555,3 +1555,40 @@ section,
   margin-bottom: 8px;
   line-height: 1.5;
 }
+
+/* Styles pour les projets cliquables */
+.project-link {
+  display: block;
+  color: inherit;
+}
+
+.project-link:hover {
+  color: inherit;
+}
+
+.project-link .project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.project-link:hover .project-card {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.project-link .project-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project-link .badge {
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover .badge {
+  background-color: var(--accent-color) !important;
+  transform: scale(1.05);
+}
