@@ -1281,10 +1281,6 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
-
 .custom-button {
   background-color: #149ddd;
   color: white;
@@ -1504,7 +1500,58 @@ section,
   margin: 0;
   text-align: left;
   display: -webkit-box;
+  display: box;
   -webkit-line-clamp: 4;
+  line-clamp: 4;
   -webkit-box-orient: vertical;
+  box-orient: vertical;
   overflow: hidden;
+}
+
+/* Styles pour la section Compétences E5 */
+.e5-competences .competence-item .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.e5-competences .competence-item .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.e5-competences .card-header {
+  border-bottom: none;
+  font-weight: 600;
+}
+
+.e5-competences .competence-definition {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--default-color);
+}
+
+.e5-competences .illustration-placeholder {
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.e5-competences .illustration-placeholder:hover {
+  background-color: #f8f9fa;
+  border-color: var(--accent-color);
+}
+
+.e5-competences h5 {
+  color: var(--heading-color);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.e5-competences ul li {
+  margin-bottom: 8px;
+  line-height: 1.5;
 }
