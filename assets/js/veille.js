@@ -12,6 +12,10 @@ const listedupanier = document.getElementById("listedupanier");
 
 // Parcourt le tableau de produits et génère des cartes Bootstrap pour chaque produit
 produits.forEach(produit => {
+  // Extrait le domaine de l'URL
+  const urlObj = new URL(produit.url);
+  const source = urlObj.hostname.replace('www.', '');
+  
   // Crée une div de type "card" pour chaque produit
   const cardHTML = `
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
@@ -22,6 +26,7 @@ produits.forEach(produit => {
                   <p>${produit.description}</p>
                   <div class="resume-section">
                     <p class="resume-text">${produit.resume}</p>
+                    <p class="source-text"><small>Source: ${source}</small></p>
                   </div>
                 </div>
               </a>
